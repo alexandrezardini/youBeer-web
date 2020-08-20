@@ -1,0 +1,106 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+}
+
+.page-header .top-bar-container {
+  width: 100vw;
+  background-color: var(--color-primary-darker);
+  border-bottom: 0.1rem solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-text-in-primary);
+  padding: 1.6rem 0;
+}
+
+.header-content {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin: 3.2rem auto;
+}
+
+.page-header h2 {
+  font: 700 1.4rem Archivo;
+  color: #ffffff
+}
+
+.page-header .top-bar-container > a {
+  height: 3.2rem;
+  transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container > a:hover {
+  opacity: 0.6;
+}
+
+.page-header .top-bar-container > img {
+  height: 1.6rem;
+}
+
+.middle-content {
+  width: 60rem;
+  background-color: blue;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 8rem;
+  padding: 2rem;
+}
+
+.content-right .text-right {
+  max-width: 30rem;
+  font: 400 1.6rem Poppins;
+  line-height: 2.6rem;
+  color: var(--color-text-in-primary);
+}
+
+.page-header .header-content strong {
+  font: 700 3.6rem Archivo;
+  line-height: 4.2rem;
+  color: var(--color-title-in-primary);
+}
+
+.page-header .header-content p {
+  max-width: 30rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-text-in-primary);
+  margin-top: 2.4rem;
+}
+
+@media (min-width: 700px) {
+  .page-header {
+    height: 340px;
+  }
+
+  .content-right {
+    margin-left: 15rem;
+    line-height: 3rem;
+  }
+
+  .page-header .header-content {
+    flex: 1;
+    max-width: 740px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-header .header-content strong {
+    max-width: 350px;
+  }
+}
