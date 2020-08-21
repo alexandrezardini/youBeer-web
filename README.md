@@ -1,13 +1,13 @@
 <h1 align="center">
 <br>
-  <img src="./screens/Logo.png" alt="YouBeer" width="200">
+  <img src="./screens/logo.png" alt="YouBeer" width="200">
 <br>
 </h1>
 
 <p align="center">Hub for beer recipes.</p>
 
 <div align="center" >
-  <img src="./screens/Overview.gif" alt="demo-app" height="425" max-width="10%">
+  <img src="./screens/overview.gif" alt="demo-app" height="425" max-width="10%">
   <img src="./screens/Landing.png" alt="demo-app" height="425" width="700">
   <img src="./screens/Landing_mobile.png" alt="demo-app" height="425" max-width="100%">
 </div>
