@@ -1,18 +1,15 @@
 import React from 'react';
 
-import whatsAppIcon from '../../assets/images/icons/whatsapp.svg';
-
 import './styles.css';
 //import api from '../../services/api';
 
 export interface Recipe {
   avatar: string;
-  bio: string;
-  cost: number;
+  recipe: string;
+  likes: number;
   id: number;
   name: string;
-  subject: string;
-  whatsApp: string;
+  type: string;
 }
 
 interface RecipeItemProps {
@@ -32,24 +29,17 @@ const RecipeItem: React.FC<RecipeItemProps> = ({ recipe }) => {
         <img src={recipe.avatar} alt={recipe.name} />
         <div>
           <strong>{recipe.name}</strong>
-          <span>{recipe.subject}</span>
+          <span>{recipe.type}</span>
         </div>
       </header>
-      <p>{recipe.bio}</p>
+      <p>{recipe.recipe}</p>
 
       <footer>
         <p>
           Preço/Hora
-          <strong>R$ {recipe.cost}</strong>
+          <strong>R$ {recipe.likes}</strong>
         </p>
-        <a
-          target='_blank'
-          onClick={() => {}}
-          href={`https://wa.me/${recipe.whatsApp}`}
-        >
-          <img src={whatsAppIcon} alt='Entrar em contato' />
-          Entrar em Contato
-        </a>
+        
       </footer>
     </article>
   );

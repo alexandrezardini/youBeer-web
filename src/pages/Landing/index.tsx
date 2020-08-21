@@ -22,7 +22,7 @@ function Landing() {
             <img src={createIcon} alt='cadastrar receita' />
             Cadastrar receita
           </Link>
-          <Link to='/' className='list-recipe'>
+          <Link to='/list' className='list-recipe'>
             <img src={listIcon} alt='Pesquisar receitas' />
             Pesquisar receita
           </Link>

@@ -115,7 +115,7 @@ function CreateRecipe() {
                       setAletemValue(index, 'ale_type', e.target.value)
                     }
                     options={[
-                      { value: 'PureWeiss', label: 'PureWeiss' },
+                      { value: 'Pure Weiss', label: 'Pure Weiss' },
                       { value: 'Sweet Stout', label: 'Sweet Stout' },
                       { value: 'English Ale', label: 'English Ale' },
                       { value: 'Pale Ale', label: 'Pale Ale' },
