@@ -48,6 +48,7 @@ function CreateRecipe() {
         ales: aleItems
       })
       .then(() => {
+        alert('Cadastro Realizado')
         history.push('/');
       })
       .catch((e: any) => console.log(e, 'ocorreu um erro'));
@@ -77,13 +78,6 @@ function CreateRecipe() {
               value={avatar}
               onChange={e => setAvatar(e.target.value)}
             />
-
-            {/* <Textarea
-              name='bio'
-              label='Bio'
-              value={bio}
-              onChange={e => setRecipe(e.target.value)}
-            /> */}
           </fieldset>
 
           <fieldset>
@@ -112,9 +106,9 @@ function CreateRecipe() {
             </legend>
             {aleItems.map((aleItem, index) => {
               return (
-                <div className='schedule-item' key={index}>
+                <div className='ale-item' key={index}>
                   <Select
-                    name='week_day'
+                    name='ale_type'
                     label='Fermentação'
                     value={aleItem.ale_type}
                     onChange={e =>
@@ -131,13 +125,22 @@ function CreateRecipe() {
                     ]}
                   />
 
-                  <Input
+                  <Select
                     name='ales'
                     label='Grão'
                     value={aleItem.ales}
                     onChange={e =>
-                      setAletemValue(index, 'alex', e.target.value)
+                      setAletemValue(index, 'ales', e.target.value)
                     }
+                    options={[
+                      { value: 'Weissbier', label: 'Weissbier' },
+                      { value: 'Dry Stout', label: 'Dry Stout' },
+                      { value: 'India Pale', label: 'India Pale' },
+                      { value: 'Strong Ale', label: 'Strong Ale' },
+                      { value: 'Pilsen', label: 'Pilsen' },
+                      { value: 'Lager', label: 'Lager' },
+                      { value: 'Clara', label: 'Clara' }
+                    ]}
                   />
                 </div>
               );

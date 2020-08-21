@@ -53,7 +53,10 @@
 
 #page-beer-form main fieldset .input-block + .textarea-block,
 #page-beer-form main fieldset .select-block + .input-block {
-    margin-top: 2.4rem;
+    margin-top: 3.2rem;
+}
+#page-beer-form main fieldset .select-block + .select-block {
+    margin-top: 0rem;
 }
 
 #page-beer-form main label {
@@ -114,13 +117,13 @@ page-beer-form main footer button:hover{
         padding: 0 6.4rem; 
     }
 
-    #page-beer-form main .schedule-item {
+    #page-beer-form main .ale-item {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 1.6rem;
     }
 
-    #page-beer-form main .schedule-item .input-block {
+    #page-beer-form main .ale-item .input-block {
         margin-top: 0!important;
     }
 
