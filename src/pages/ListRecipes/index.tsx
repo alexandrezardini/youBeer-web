@@ -13,14 +13,14 @@ import './styles.css';
 function RecipesList() {
   //const [totalTeachers, setTotalTeachers] = useState({});
   const [searchMessage, setSearchMessage] = useState(
-    'Selecione os typos e a fermentação.'
+    'Selecione os tipos e a fermentação.'
   );
   const [recipes, setRecipes] = useState([]);
   const [type, setType] = useState('');
   const [ale_type, setAleType] = useState('');
   const [ales, setAles] = useState('');
 
-  async function searchTeachers(e: FormEvent) {
+  async function searchRecipes(e: FormEvent) {
     e.preventDefault();
     try {
       const response = await api.get('recipes', {
@@ -45,14 +45,14 @@ function RecipesList() {
   }, []);
 
   return (
-    <div id='page-teacher-list' className='container'>
+    <div id='page-recipe-list' className='container'>
       <PageHeader
         title='Estes são as receitas disponiveis'
         pageName='Estudar'
         iconLeft={beerIcon}
         textRight={`Nós temos no total 20 receitas cadastradas`}
       >
-        <form id='search-teachers' onSubmit={searchTeachers}>
+        <form id='search-recipes' onSubmit={searchRecipes}>
           <Select
             name='type'
             label='Tipos'

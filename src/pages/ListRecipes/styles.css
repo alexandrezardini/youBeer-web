@@ -1,19 +1,19 @@
-#page-teacher-list {
+#page-recipe-list {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-#search-teachers {
+#search-recipes {
   margin-top: 3.2rem;
 }
 
-#search-teachers label {
+#search-recipes label {
   color: var(--color-text-in-primary);
 }
 
-#search-teachers button {
+#search-recipes button {
   width: 100%;
   height: 5.6rem;
   background: var(--color-secundary);
@@ -30,22 +30,22 @@
   margin-top: 3.2rem;
 }
 
-#search-teachers button:hover {
+#search-recipes button:hover {
   background: var(--color-secundary-dark);
 }
 
-#page-teacher-list main {
+#page-recipe-list main {
   margin: 3.2rem auto;
   width: 90%;
 }
 
-#page-teacher-list .empty-search {
+#page-recipe-list .empty-search {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
 }
 
-#page-teacher-list .title-empty-list {
+#page-recipe-list .title-empty-list {
   text-align: center;
   font-size: 2.2rem;
   max-width: 30rem;
@@ -55,11 +55,11 @@
 }
 
 @media (min-width: 700px) {
-  #page-teacher-list {
+  #page-recipe-list {
     max-width: 100%;
   }
 
-  #search-teachers {
+  #search-recipes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
@@ -67,12 +67,12 @@
     bottom: -28px;
   }
 
-  #search-teachers .input-block + .input-block,
-  #search-teachers .select-block + .select-block {
+  #search-recipes .input-block + .input-block,
+  #search-recipes .select-block + .select-block {
     margin-top: 0;
   }
 
-  #page-teacher-list main {
+  #page-recipe-list main {
     padding: 3.2rem 0;
     max-width: 740px;
     margin: 0 auto;

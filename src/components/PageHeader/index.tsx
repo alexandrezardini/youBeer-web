@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logoImg from '../../assets/imgs/icons/beer-icon.svg';
+import logoImg from '../../assets/imgs/logo.png';
 import backIcon from '../../assets/imgs/icons/back.svg';
 
 import './styles.css';
