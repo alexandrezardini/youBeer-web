@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   background: var(--color-background);
   color: var(--color-text-in-primary);
@@ -27,7 +28,6 @@
   width: 100%;
 }
 
-
 .logo-container h2 {
   font-weight: 500;
   font-size: 2.4rem;
@@ -36,18 +36,33 @@
   width: 100%;
 }
 
+.landing-footer {
+  background: var(--color-primary-footer);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer strong {
+  margin-top: 1.2rem;
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--color-background);
+}
+
 .buttons-container {
   display: flex;
   justify-content: center;
-  margin: 3.2rem 0;
+  margin: 3.2rem 1.6rem;
 }
 
 .buttons-container a {
   width: 30rem;
-  height: 10.4rem;
+  height: 10rem;
   border-radius: 0.8rem;
-  margin-right: 1.6rem;
-  font: 700 2rem Archivo;
+  font: 700 2.2rem Archivo;
 
   display: flex;
   align-items: center;
@@ -64,7 +79,7 @@
 
 .buttons-container a img {
   width: 4rem;
-  margin-right: 2.4rem;
+  margin: 0 2.5rem;
 }
 
 .buttons-container a.create-recipe {
@@ -88,7 +103,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: (--color)
+  color: var(--color-background);
+  margin-top: 2.4rem
 }
 
 .total-beers img {
@@ -98,14 +114,11 @@
 
 @media (min-width: 1100px) {
   #landing-page-content {
-    max-width: 1100px;
-
+    max-width: 1500px;
+    margin-bottom: 10rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 350px 1fr;
-    grid-template-areas:
-      'logo hero hero'
-      'buttons buttons total';
+    grid-template-areas: 'logo hero hero';
   }
 
   .logo-container {
@@ -130,26 +143,33 @@
   }
 
   .hero-image {
+    margin-top: 2.5rem;
     grid-area: hero;
     justify-self: end;
   }
 
-
-  .buttons-container {
-    grid-area: buttons;
-    justify-content: flex-start;
-    margin-top: 10rem;
+  .landing-footer {
+    background: var(--color-primary-footer);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .buttons-container a {
     font-size: 2.4rem;
-    
+  }
+
+  .buttons-container a img {
+    margin: 0 5rem;
+    width: 6rem;
   }
 
   .total-beers {
     grid-area: total;
     justify-self: end;
     font-size: 1.5rem;
-    margin-top: 7rem;
   }
 }

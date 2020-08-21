@@ -48,7 +48,7 @@ function RecipesList() {
     <div id='page-recipe-list' className='container'>
       <PageHeader
         title='Estes são as receitas disponiveis'
-        pageName='Estudar'
+        pageName='Pesquisar'
         iconLeft={beerIcon}
         textRight={`Nós temos no total 20 receitas cadastradas`}
       >

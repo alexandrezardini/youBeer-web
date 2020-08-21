@@ -1,5 +1,7 @@
 import React from 'react';
 
+import like from '../../assets/imgs/icons/like_icon.svg'
+
 import './styles.css';
 //import api from '../../services/api';
 
@@ -35,9 +37,10 @@ const RecipeItem: React.FC<RecipeItemProps> = ({ recipe }) => {
       <p>{recipe.recipe}</p>
 
       <footer>
+        <img src={like} alt='like' />
         <p>
-          Preço/Hora
-          <strong>R$ {recipe.likes}</strong>
+          Likes
+          <strong>{recipe.likes}</strong>
         </p>
         
       </footer>
